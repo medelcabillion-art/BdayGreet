@@ -301,36 +301,6 @@ I’m so proud of you, and I’m excited to see all the beautiful things God has
   flip.addEventListener('click', function(){ if (!flip.classList.contains('open')) toggleCard(); });
   flipBtn.addEventListener('click', toggleCard);
 
-  var inName = $('#inName'), inFrom = $('#inFrom'), inMsg = $('#inMsg'), note = $('#note');
-  inName.value = state.n === DEFAULTS.n ? '' : state.n;
-  inFrom.value = state.f === DEFAULTS.f ? '' : state.f;
-  inMsg.value  = state.m === DEFAULTS.m ? '' : state.m;
-  function sync(){
-    state.n = inName.value || DEFAULTS.n;
-    state.f = inFrom.value || DEFAULTS.f;
-    state.m = inMsg.value || DEFAULTS.m;
-    renderTitle(); renderCard();
-  }
-  [inName, inFrom, inMsg].forEach(function(el){ el.addEventListener('input', sync); });
-
-  function buildLink(){
-    var p = new URLSearchParams({ n: state.n, f: state.f, m: state.m }).toString();
-    var base = '';
-    try { base = location.href.split('#')[0]; } catch (e) {}
-    return base + '#' + p;
-  }
-  $('#copyBtn').addEventListener('click', function(){
-    var url = buildLink(), out = $('#linkOut');
-    out.hidden = false; out.value = url; out.focus(); out.select();
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(url).then(
-        function(){ note.textContent = 'Link copied. Send it to someone you love.'; },
-        function(){ note.textContent = 'Copy the link from the box above.'; }
-      );
-    } else {
-      note.textContent = 'Copy the link from the box above.';
-    }
-  });
 
   /* ---------- go ---------- */
   renderTitle(); renderCard(); renderBalls(); update();
