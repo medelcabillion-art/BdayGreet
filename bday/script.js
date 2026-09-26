@@ -5,10 +5,10 @@
 
   /* ---------- state ---------- */
   var DEFAULTS = {
-    n: 'Ate Ading',
-    f: 'Medel',
+    n: 'Ate',
+    f: 'Ading',
     m: `Happy Birthday, Ate! Ading 🎂💗
-I’m so thankful to God for blessing my life with someone like you. You’re not just an Ate to me, but also someone I look up to and learn so much from. Thank you for always being there, for your guidance, your kindness, and for being someone I can count on. ❤️
+I’m so thankful to God for blessing my life with someone like you. You’re not just an Ate to me, but also someone I look up to and learn so much from. Thank you for always being there, for your guidance, your kindness, and for being someone I can count on. 🥹❤️
 I’m also so blessed to see you serve God through worship leading. The way you use your gift to lead people into His presence is truly inspiring. And as a Children’s Church teacher, I know how much love, patience, and effort you give to the kids. You’re helping them know and love God, and I’m sure the seeds you’re planting in their hearts will mean so much someday. 🙏✨
 And of course, I’m so proud of you as you continue your journey in nursing! 🩺🤍 You’re getting closer and closer to becoming a nurse, and I know all the hard work, sleepless nights, stress, and sacrifices will be worth it. Next year, you’ll finally graduate, and I can’t wait to see you reach that dream! 🎓✨
 May God continue to strengthen you, guide you, and bless everything you do. May He give you more wisdom as you serve Him, more patience as you teach, and more strength as you continue your nursing journey.
