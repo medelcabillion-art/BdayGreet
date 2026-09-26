@@ -136,62 +136,39 @@
   <section class="plain">
     <div class="wrap">
       <h2>A card, just for them</h2>
-      <p class="sec-lead">Open the card, then write your own name and message to make it yours.</p>
-      <div class="card-grid">
-        <div class="card-col">
-          <div class="flip" id="flip">
-            <div class="flip-inner">
-              <div class="face front">
-                <svg width="150" height="150" viewBox="0 0 150 150" aria-hidden="true" focusable="false">
-                  <g transform="rotate(-32 70 78)">
-                    <rect x="62" y="96" width="16" height="12" fill="#2B0F55"/>
-                    <rect x="58" y="104" width="24" height="38" rx="8" fill="#FFC933" stroke="#2B0F55" stroke-width="4"/>
-                    <line x1="60" y1="116" x2="80" y2="116" stroke="#2B0F55" stroke-width="3"/>
-                    <line x1="60" y1="126" x2="80" y2="126" stroke="#2B0F55" stroke-width="3"/>
-                    <rect x="28" y="6" width="84" height="96" rx="36" fill="#FF5FAE" stroke="#2B0F55" stroke-width="4"/>
-                    <rect x="40" y="18" width="60" height="72" rx="26" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".7"/>
-                    <circle cx="70" cy="52" r="10" fill="#FFFFFF" opacity=".85"/>
-                  </g>
-                  <circle cx="122" cy="118" r="20" fill="#D9F53C" stroke="#2B0F55" stroke-width="4"/>
-                  <g fill="#2B0F55" opacity=".55">
-                    <circle cx="122" cy="108" r="2.6"/><circle cx="112" cy="115" r="2.6"/><circle cx="132" cy="115" r="2.6"/>
-                    <circle cx="122" cy="120" r="2.6"/><circle cx="111" cy="126" r="2.6"/><circle cx="133" cy="126" r="2.6"/>
-                    <circle cx="122" cy="131" r="2.6"/>
-                  </g>
-                </svg>
-                <div class="for">For <span id="cardFor"></span></div>
-                <div class="tap">Tap to open</div>
-              </div>
-              <div class="face back">
-                <div class="dear">Dear <span id="cardName"></span>,</div>
-                <div class="msg" id="cardMsg"></div>
-                <div class="from">With love, <span id="cardFrom"></span></div>
-              </div>
+      <p class="sec-lead">Open the card to read the message.</p>
+      <div class="card-col">
+        <div class="flip" id="flip">
+          <div class="flip-inner">
+            <div class="face front">
+              <svg width="150" height="150" viewBox="0 0 150 150" aria-hidden="true" focusable="false">
+                <g transform="rotate(-32 70 78)">
+                  <rect x="62" y="96" width="16" height="12" fill="#2B0F55"/>
+                  <rect x="58" y="104" width="24" height="38" rx="8" fill="#FFC933" stroke="#2B0F55" stroke-width="4"/>
+                  <line x1="60" y1="116" x2="80" y2="116" stroke="#2B0F55" stroke-width="3"/>
+                  <line x1="60" y1="126" x2="80" y2="126" stroke="#2B0F55" stroke-width="3"/>
+                  <rect x="28" y="6" width="84" height="96" rx="36" fill="#FF5FAE" stroke="#2B0F55" stroke-width="4"/>
+                  <rect x="40" y="18" width="60" height="72" rx="26" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".7"/>
+                  <circle cx="70" cy="52" r="10" fill="#FFFFFF" opacity=".85"/>
+                </g>
+                <circle cx="122" cy="118" r="20" fill="#D9F53C" stroke="#2B0F55" stroke-width="4"/>
+                <g fill="#2B0F55" opacity=".55">
+                  <circle cx="122" cy="108" r="2.6"/><circle cx="112" cy="115" r="2.6"/><circle cx="132" cy="115" r="2.6"/>
+                  <circle cx="122" cy="120" r="2.6"/><circle cx="111" cy="126" r="2.6"/><circle cx="133" cy="126" r="2.6"/>
+                  <circle cx="122" cy="131" r="2.6"/>
+                </g>
+              </svg>
+              <div class="for">For <span id="cardFor"></span></div>
+              <div class="tap">Tap to open</div>
+            </div>
+            <div class="face back">
+              <div class="dear">Dear <span id="cardName"></span>,</div>
+              <div class="msg" id="cardMsg"></div>
+              <div class="from">With love, <span id="cardFrom"></span></div>
             </div>
           </div>
-          <button class="btn" id="flipBtn" type="button" aria-pressed="false">Open the card</button>
         </div>
-
-        <div class="editor">
-          <h3>Make it yours</h3>
-          <div class="field">
-            <label for="inName">Their name</label>
-            <input id="inName" type="text" maxlength="24" autocomplete="off" placeholder="Ate">
-          </div>
-          <div class="field">
-            <label for="inFrom">Your name</label>
-            <input id="inFrom" type="text" maxlength="28" autocomplete="off" placeholder="Your friends">
-          </div>
-          <div class="field">
-            <label for="inMsg">Your message</label>
-            <textarea id="inMsg" maxlength="2000" placeholder="Write something kind and a little silly."></textarea>
-          </div>
-          <div>
-            <button class="btn" id="copyBtn" type="button">Copy greeting link</button>
-          </div>
-          <input class="field linkout" id="linkOut" type="text" readonly hidden aria-label="Your greeting link">
-          <p class="note" id="note" role="status" aria-live="polite"></p>
-        </div>
+        <button class="btn" id="flipBtn" type="button" aria-pressed="false">Open the card</button>
       </div>
     </div>
   </section>
